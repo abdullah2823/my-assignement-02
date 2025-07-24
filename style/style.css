@@ -1,29 +1,29 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 .inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 
 .noto-serif-font {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
 }
 
 /* shared style */
-.display-flex{
+.display-flex {
     display: flex;
 
 }
-.width{
+
+.width {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -31,86 +31,105 @@
 
 
 /* navbar style */
-.navbar{
+.navbar {
     align-items: center;
     justify-content: space-between;
 }
-nav li{
+
+nav li {
     list-style: none;
-    font-size: 1rem; 
+    font-size: 1rem;
 
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: #8987A1;
 }
-nav li a:hover{
+
+nav li a:hover {
     color: #252432;
     font-weight: bold;
 }
-.nav-list{
+
+.nav-list {
     gap: 48px;
-    
+
 }
+
 /* Banner */
-.banner{
+.banner {
     justify-content: space-between;
     align-items: end;
     margin-top: 120px;
 }
+
 .banner-titel {
     font-size: 4rem;
     font-weight: bold;
     color: #252432;
     margin-bottom: 13px;
 }
-.text-style{
+
+.text-style {
     color: #E95A08;
 }
-.banner-description{
+
+.banner-description {
     color: rgba(0, 0, 0, 0.5);
     margin-top: 0;
 }
-.banner-img{
+
+.banner-img {
     max-width: 570px;
 }
+
 /* plan */
-.plan-titel{
+.plan-titel {
     font-size: 3.12rem;
     font-weight: bold;
     margin-bottom: 16px;
 }
-.plan-descrip{
+
+.plan-descrip {
     font-size: 1.3rem;
     font-weight: 400px;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 0;
 }
-.plan-text{
+
+.plan-text {
     justify-content: center;
     text-align: center;
     margin-top: 120px;
     margin-bottom: 49px;
 }
-.plan-cards{
+
+.plan-cards {
     width: 270px;
+    height: 484px;
     text-align: center;
+    margin-top: 20px;
 }
-.plan-cards img{
+
+.plan-cards img {
     margin-bottom: 0;
 }
-.card-name{
+
+.card-name {
     font-size: 1.3rem;
     font-weight: 500;
     color: #111111;
     margin-top: 30px;
 }
-.card-price{
+
+.card-price {
     font-size: 1.3rem;
     font-weight: bold;
     color: #111111;
 }
-.card-button{
+
+.card-button {
     background-color: #E95A08;
     border: none;
     color: white;
@@ -118,59 +137,71 @@ nav li a:hover{
     font-weight: 600;
     padding: 19px 80px;
 }
-.card{
+
+.card {
     display: grid;
-    grid-template-columns: repeat(4, 4fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
+
 /* flower-plants */
-.flower-plants{
+.flower-plants {
     margin-top: 210px;
     gap: 60px;
-    
+
 }
-#flower-img{
+
+#flower-img {
     max-width: 540px;
 }
 
-.flower-plants-text{
-   align-content: center;
-   max-width: 540px;
+.flower-plants-text {
+    align-content: center;
+    justify-content: center;
+    max-width: 540px;
 }
-.flower-titel{
+
+.flower-titel {
     font-size: 3.125rem;
     font-weight: bold;
     color: #000000;
 }
-.flower-descrip{
+
+.flower-descrip {
     font-size: 1.3rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
 }
-.flower-plants-img{
+
+.flower-plants-img {
     position: relative;
 
 }
-#betch-img{
+
+#betch-img {
     width: 286px;
     height: 286px;
-    position:absolute;
+    position: absolute;
     right: -130px;
     top: -130px;
-    text-shadow:-4px 10px 4px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: -4px 10px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
 /* deal section */
-.deal-img-ad-2{
+.deal-img-ad-2 {
     background-image: url(../assets/deal-ana.png);
 }
-.deal-img-ad-3{
+
+.deal-img-ad-3 {
     background-image: url(../assets/deal-zabo.png);
 }
-.deal-img-ad{
+
+.deal-img-ad {
     background-image: url(../assets/deal-bloom.png);
-   
+
 }
-.deal-ads{
+
+.deal-ads {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -178,34 +209,75 @@ nav li a:hover{
     border-radius: 10px;
     width: 100%;
     align-items: center;
+    align-items: center;
     text-align: center;
 }
-.img-text{
-    padding: 65px 49px ;
+
+.deal-img-ad {
+    grid-area: deal-img-ad;
+}
+
+.deal-img-ad-3 {
+    grid-area: deal-img-ad-3;
+}
+
+.deal-img-ad-2 {
+    grid-area: deal-img-ad-2;
+}
+
+.ads {
+    display: grid;
+    gap: 25px;
+    grid-template-areas:
+        "deal-img-ad    deal-img-ad-3"
+        "deal-img-ad-2  deal-img-ad-3"
+    ;
+}
+
+.img-text {
+    padding: 65px 49px;
     color: white;
 }
-.img-text-titel{
+
+.img-text-titel {
     color: white;
     font-size: 1.25rem;
 
 }
-.img-text a{
+
+.img-text a {
     /* text-decoration: none; */
     color: white;
     font-size: 1rem;
 }
-.ads{
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-    column-span: 2;
-    gap: 25px;
+
+.img-text-big {
+
+    padding: 150px 127px;
 }
-.deal-titel{
+
+.deal-titel {
     font-size: 3.125rem;
     font-weight: bold;
     margin-bottom: 0px;
 }
-.deal-descript{
+
+.img-text-titel-big {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+.button-big {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 0;
+
+}
+
+.deal-descript {
     font-size: 1.375rem;
     font-weight: 400px;
     color: rgba(0, 0, 0, 0.5);
@@ -213,43 +285,227 @@ nav li a:hover{
     margin-top: 16px;
     margin-bottom: 0;
 }
-.deal-text{
+
+.deal-text {
     text-align: center;
     justify-items: center;
     margin: 133px;
 }
 
+/* Join beatch */
+.join-beach {
+    height: 533px;
+    justify-items: center;
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.beach-titel {
+    color: white;
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+
+.text-aliment {
+    align-items: center;
+    text-align: center;
+    padding: 195px 305px;
+}
+
+.search-bar input[type="email"] {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 540px;
+
+}
+
+.subscribe {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #E95A08;
+    padding: 16px 53px;
+    border: none;
+    cursor: pointer;
+}
+
+/* footer section */
+.footer-text {
+    width: 359px;
+    height: 81px;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+footer {
+    gap: 110px;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fotter-icons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.dh {
+    display: hide;
+}
 
 /* Responsibe designe */
-@media screen and (max-width:576px){
-    nav li a{
+@media screen and (max-width:576px) {
+    nav li a {
         display: none;
     }
-    .navli{
+
+    .navli {
         display: flex;
         color: #252432;
         width: 113px;
         height: 24px;
         color: #252432;
-    font-weight: bold;
+        font-weight: bold;
     }
-    .navbar{
+
+    .navbar {
         justify-content: center;
         align-items: end;
         margin-left: 16px;
         margin-right: 16px;
+        margin-bottom: 0;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
         align-items: center;
-        text-align: center;
+
     }
-    .banner-img{
+
+    #img-banner {
         max-width: 393px;
-        align-items: center;
+        height: 245px;
+        margin-top: 16px;
     }
-    .banner-titel{
+
+    .banner-description {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 16px;
+    }
+
+    .banner-titel {
         font-size: 1.5rem;
         font-weight: bold;
+        height: 33px;
+        /* width: 191px; */
+        margin-bottom: 13px;
     }
+
+    /* plan respons */
+
+    .plan-text {
+        max-width: 393px;
+        margin: 0 20px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 362px;
+
+    }
+
+    /* flower */
+    #betch-img {
+        display: none;
+    }
+
+    .flower-plants {
+        display: flex;
+        flex-direction: column;
+        width: 361px;
+    }
+
+    #flower-img {
+        max-width: 358px;
+        height: 396px;
+        margin-bottom: 18px;
+    }
+
+    .flower-plants-text {}
+
+    /* deal */
+    .deal-text {
+        margin: 50px 28px
+    }
+
+    .deal-img-ad {
+        grid-area: deal-img-ad;
+    }
+
+    .deal-img-ad-3 {
+        grid-area: deal-img-ad-3;
+    }
+
+    .deal-img-ad-2 {
+        grid-area: deal-img-ad-2;
+    }
+
+    .ads {
+        display: grid;
+        gap: 25px;
+        grid-template-areas:
+            "deal-img-ad"
+            "deal-img-ad-2"
+            "deal-img-ad-3"
+        ;
+    }
+
+    .img-text-big {
+        padding-top: 60px;
+        padding-bottom: 35px;
+        padding-left: 49px;
+        padding-right: 42px;
+    }
+
+    .beach-titel {
+        font-size: 1.25rem;
+    }
+
+    .search-bar input[type="email"] {
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 144px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 20px;
+        justify-content: left;
+    }
+    .footer-item-01{
+        gap: 20px;
+    }
+
 }
