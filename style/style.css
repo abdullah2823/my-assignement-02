@@ -106,10 +106,11 @@ nav li a:hover {
 }
 
 .plan-cards {
-    width: 270px;
-    height: 484px;
+    /* width: 270px; */
+    /* height: 484px; */
     text-align: center;
-    margin-top: 20px;
+    width: 100%;
+    /* margin-top: 20px; */
 }
 
 .plan-cards img {
@@ -139,6 +140,7 @@ nav li a:hover {
 }
 
 .card {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -416,7 +418,6 @@ footer ul li a {
         font-size: 1.5rem;
         font-weight: bold;
         height: 33px;
-        /* width: 191px; */
         margin-bottom: 13px;
     }
 
@@ -428,10 +429,15 @@ footer ul li a {
     }
 
     .card {
+        flex: 1;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 362px;
+        grid-template-columns:repeat(2, 1fr);
+        max-width: 362px;
 
+    }
+    .plan-cards{
+        margin: auto;
+        gap: 20px;
     }
 
     /* flower */
@@ -490,21 +496,39 @@ footer ul li a {
     .beach-titel {
         font-size: 1.25rem;
     }
-
-    .search-bar input[type="email"] {
-        padding: 15px;
-        padding-left: 20px;
-        padding-right: 144px;
+    /* search */
+    .beach-titel{
+        font-size: 20px;
+    }
+    .search-bar{
+        width: 321px;
+        height: 50px;
+        display: flex;
+        gap: none;
     }
 
-    footer{
+    .search-bar input[type="email"]{
+        padding: 15px;
+        padding-left: 20px;
+        width: 218px;
+        padding-right: 10px;
+    }
+    .subscribe{
+        padding: 19px 12px;
+    }
+    .text-aliment{
+        width: 321px;
+    }
+
+    footer {
         display: flex;
         flex-direction: column;
         gap: 50px;
         margin-left: 20px;
         justify-content: left;
     }
-    .footer-item-01{
+
+    .footer-item-01 {
         gap: 20px;
     }
 
