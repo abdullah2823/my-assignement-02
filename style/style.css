@@ -355,11 +355,16 @@ footer ul li {
     margin-bottom: 32px;
 }
 
+
 footer ul li a {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
+}
+footer ul li a:hover{
+    color: #252432;
+    font-weight: bold;
 }
 
 .fotter-icons {
